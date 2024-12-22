@@ -1,12 +1,5 @@
 import styles from "./App.module.css";
-import {
-  Button,
-  Container,
-  Divider,
-  Paper,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Button, Paper, Stack, Typography } from "@mui/material";
 import CloudUpload from "@mui/icons-material/CloudUpload";
 
 function App() {
