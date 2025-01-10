@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "client/**/*.{js,jsx,ts,tsx}": [
+      "eslint -c client/eslint.config.js",
+      "prettier --write"
+    ],
+    "server/**/*.{js,jsx,ts,tsx}": [
+      "eslint -c server/eslint.config.js",
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
+    "prettier": "^3.4.2"
+  }
+}
